@@ -10,30 +10,32 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container header-content">
-      <h1 class="logo"><a href="index.html">E-News</a></h1>
-      <nav class="main-nav">
-        <a href="#">World</a>
-        <a href="#">Politics</a>
-        <a href="#">Business</a>
-        <a href="#">Sports</a>
-        <a href="#">Tech</a>
-      </nav>
+      <h1 class="logo"><a href="index.html"><img src="assets/images/Asia-logo.png" alt="" width="50px"></a></h1>
+      <div class="header-right">
+        <input type="text" class="search-bar" placeholder="Search news...">
+        <a href="#" class="profile-icon" title="Login">👤</a>
+      </div>
     </div>
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="#">Art Cinema</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Dance</a></li>
+        <li><a href="#">Geo Politics</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Human Rights</a></li>
+        <li><a href="#">Live Event</a></li>
+        <li><a href="#">Travel</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Article Section -->
-  <section class="article-section container">
-    <h2>AI Technology Shaping the Future of Healthcare</h2>
-    <p class="meta">By <strong>Niladri Maji</strong> | November 9, 2025</p>
-    <img src="assets/images/news2.jpg" alt="Article Image" class="article-image">
-    <div class="article-body">
-      <p>Artificial intelligence (AI) is revolutionizing healthcare by improving diagnostic accuracy and reducing treatment time...</p>
-      <p>Experts believe that AI can analyze vast amounts of patient data, predict diseases, and assist in early detection...</p>
-      <p>However, experts also warn that AI must be used ethically, with patient privacy being a top concern...</p>
-    </div>
+  <section class="article-section container" id="article-section">
+    <!-- Article content will be dynamically loaded here -->
   </section>
 
   <!-- Footer -->
@@ -44,5 +46,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/data/data.js"></script>
 </body>
 </html>

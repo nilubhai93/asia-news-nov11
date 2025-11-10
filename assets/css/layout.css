@@ -4,9 +4,7 @@
   color: #222;
   /* padding: 15px 0; */
 }
-.sub-nav {
-  background: #f5f5f5;
-}
+
 .sub-nav ul {
   list-style: none;
   display: flex;
@@ -27,8 +25,10 @@
 .sub-nav.fixed {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   z-index: 1000;
+  background: #f5f5f5;
 }
 @media (max-width: 768px) {
   .sub-nav ul {
@@ -121,10 +121,4 @@
   border-radius: 5px;
 }
 
-.site-footer {
-  background: #101820;
-  color: #ccc;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 50px;
-}
+/* Footer styles moved to base.css for fixed positioning */

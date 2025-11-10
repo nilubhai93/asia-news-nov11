@@ -19,18 +19,20 @@
         <a href="#" class="profile-icon" title="Login">👤</a>
       </div>
     </div>
-    <nav class="sub-nav">
-      <ul>
-        <li><a href="#">Art Cinema</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Dance</a></li>
-        <li><a href="#">Geo Politics</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Human Rights</a></li>
-        <li><a href="#">Live Event</a></li>
-        <li><a href="#">Travel</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="sub-nav">
+        <ul>
+          <li><a href="#">Art Cinema</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Dance</a></li>
+          <li><a href="#">Geo Politics</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Human Rights</a></li>
+          <li><a href="#">Live Event</a></li>
+          <li><a href="#">Travel</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- ===== Hero Section ===== -->
@@ -48,35 +50,8 @@
   <!-- ===== Latest News ===== -->
   <section class="news-section container">
     <h2 class="section-title">Latest News</h2>
-    <div class="news-grid">
-
-      <div class="news-card">
-        <img src="assets/images/news1.jpg" alt="News Image">
-        <div class="news-content">
-          <h3><a href="article.html">Economy shows signs of recovery after 2025</a></h3>
-          <p>Experts say the economy is stabilizing after a turbulent year, with major industries showing growth...</p>
-          <small>Business • Nov 10, 2025</small>
-        </div>
-      </div>
-
-      <div class="news-card">
-        <img src="assets/images/news2.jpg" alt="News Image">
-        <div class="news-content">
-          <h3><a href="article.html">AI Technology shaping the future of healthcare</a></h3>
-          <p>Artificial intelligence is transforming how doctors diagnose diseases and treat patients more effectively...</p>
-          <small>Technology • Nov 9, 2025</small>
-        </div>
-      </div>
-
-      <div class="news-card">
-        <img src="assets/images/news1.jpg" alt="News Image">
-        <div class="news-content">
-          <h3><a href="article.html">Sports: India clinches victory in test match</a></h3>
-          <p>In a thrilling finish, India beat Australia by 3 wickets to take a 2-1 lead in the series...</p>
-          <small>Sports • Nov 8, 2025</small>
-        </div>
-      </div>
-
+    <div class="news-grid" id="news-grid">
+      <!-- News cards will be dynamically loaded here -->
     </div>
   </section>
 
@@ -88,5 +63,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/data/data.js"></script>
 </body>
 </html>
