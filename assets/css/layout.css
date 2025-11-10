@@ -1,0 +1,118 @@
+/* assets/css/layout.css */
+.site-header {
+  background: #101820;
+  color: #fff;
+  /* padding: 15px 0; */
+}
+.sub-nav {
+  background: #1a1a1a;
+}
+.sub-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.sub-nav li {
+  margin: 0 15px;
+}
+.sub-nav a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+}
+.sub-nav a:hover {
+  color: #00aaff;
+}
+.sub-nav.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00aaff;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+}
+.search-bar:focus {
+  outline: none;
+  border-color: #00aaff;
+}
+.profile-icon {
+  font-size: 24px;
+  color: #ccc;
+  text-decoration: none;
+}
+.profile-icon:hover {
+  color: #fff;
+}
+.main-nav a {
+  color: #ccc;
+  margin-left: 15px;
+  font-size: 15px;
+}
+.main-nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+.hero-content {
+  position: relative;
+}
+.hero-content img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.hero-text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  max-width: 600px;
+}
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+.btn {
+  background: #00aaff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.site-footer {
+  background: #101820;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
