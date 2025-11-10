@@ -51,11 +51,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 .header-right {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+/* Responsive header */
+@media (max-width: 768px) {
+  .header-content {
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .header-right {
+    justify-content: space-between;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 .search-bar {
   padding: 8px 12px;
@@ -67,6 +89,13 @@
 .search-bar:focus {
   outline: none;
   border-color: #00aaff;
+}
+
+/* Responsive search bar */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 150px; /* Smaller width on mobile */
+  }
 }
 .profile-icon {
   font-size: 24px;
@@ -86,7 +115,6 @@
 }
 
 .hero {
-  background: #000;
   color: #fff;
   position: relative;
 }
@@ -113,6 +141,27 @@
   font-size: 16px;
   color: #ddd;
   margin-bottom: 20px;
+}
+
+/* Responsive hero section */
+@media (max-width: 768px) {
+  .hero-text {
+    left: 20px;
+    bottom: 20px;
+    max-width: calc(100% - 40px);
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-content img {
+    height: 300px; /* Shorter hero on mobile */
+  }
 }
 .btn {
   background: #00aaff;

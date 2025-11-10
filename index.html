@@ -13,12 +13,15 @@
   <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container header-content">
-      <h1 class="logo"><a href="index.html"><img src="assets/images/Asia-logo.png" alt="" width="50px"></a></h1>
+      <h1 class="logo"><a href="index.html"><img src="assets/images/Asia-logo.png" width="50px"></a></h1>
       <div class="header-right">
         <input type="text" class="search-bar" placeholder="Search news...">
         <a href="#" class="profile-icon" title="Login">👤</a>
       </div>
     </div>
+    
+    <hr>
+    
     <div class="container">
       <nav class="sub-nav">
         <ul>
@@ -38,7 +41,7 @@
   <!-- ===== Hero Section ===== -->
   <section class="hero">
     <div class="container hero-content">
-      <img src="assets/images/" alt="Top News">
+      <img src="https://picsum.photos/id/1018/800/450" alt="Top News">
       <div class="hero-text">
         <h2>Breaking: World Leaders Meet for Climate Summit</h2>
         <p>Global leaders gathered in Geneva to discuss urgent climate change initiatives and carbon reduction goals.</p>
@@ -50,8 +53,18 @@
   <!-- ===== Latest News ===== -->
   <section class="news-section container">
     <h2 class="section-title">Latest News</h2>
-    <div class="news-grid" id="news-grid">
-      <!-- News cards will be dynamically loaded here -->
+    <div class="news-layout">
+      <aside class="news-sidebar">
+        <h3>Recent Headlines</h3>
+        <ul class="recent-headlines">
+          <!-- Recent headlines will be dynamically loaded here -->
+        </ul>
+      </aside>
+      <div class="news-main">
+        <div class="news-grid" id="news-grid">
+          <!-- News cards will be dynamically loaded here -->
+        </div>
+      </div>
     </div>
   </section>
 

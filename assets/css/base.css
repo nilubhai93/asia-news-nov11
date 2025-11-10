@@ -3,5 +3,13 @@
 body { font-family: 'Segoe UI', Arial, sans-serif; color: #222; background: #fafafa; }
 a { color: inherit; text-decoration: none; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Responsive container */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
 img { max-width: 100%; display: block; }
 .site-footer { background: #101820; color: #ccc; text-align: center; padding: 20px 0; margin-top: 50px; opacity: 0; transition: opacity 0.3s ease; }

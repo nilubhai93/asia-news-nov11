@@ -7,10 +7,111 @@
   padding-left: 10px;
 }
 
+.news-layout {
+  display: flex;
+  gap: 20px;
+}
+
+.news-sidebar {
+  flex: 0 0 30%;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.recent-headlines {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-headlines li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recent-headlines li:last-child {
+  border-bottom: none;
+}
+
+.headline-left img {
+  width: 105px;
+  height: 113px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.headline-right {
+  flex-direction: row-reverse;
+}
+
+.headline-right img {
+  width: 105px;
+  height: 113px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.recent-headlines a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.recent-headlines a:hover {
+  color: #00aaff;
+}
+
+.news-main {
+  flex: 1;
+}
+
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+/* Responsive design for Latest News section */
+@media (max-width: 768px) {
+  .news-layout {
+    flex-direction: column;
+  }
+
+  .news-sidebar {
+    flex: none;
+    order: 2; /* Sidebar below main content on mobile */
+    padding: 20px;
+  }
+
+  .news-main {
+    order: 1;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 15px;
+  }
+
+  .recent-headlines li {
+    flex-direction: row; /* Ensure consistent direction on mobile */
+  }
+
+  .headline-right {
+    flex-direction: row; /* Override to row on mobile */
+  }
 }
 
 .news-card {
