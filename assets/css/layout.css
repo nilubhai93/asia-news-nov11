@@ -1,11 +1,11 @@
 /* assets/css/layout.css */
 .site-header {
-  background: #101820;
-  color: #fff;
+  background: #fff;
+  color: #222;
   /* padding: 15px 0; */
 }
 .sub-nav {
-  background: #1a1a1a;
+  background: #f5f5f5;
 }
 .sub-nav ul {
   list-style: none;
@@ -17,7 +17,7 @@
   margin: 0 15px;
 }
 .sub-nav a {
-  color: #ccc;
+  color: #555;
   font-size: 14px;
   text-decoration: none;
 }
@@ -29,6 +29,18 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+}
+@media (max-width: 768px) {
+  .sub-nav ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+    padding: 10px 20px;
+  }
+  .sub-nav li {
+    flex-shrink: 0;
+    margin: 0 10px;
+  }
 }
 .logo a {
   font-size: 24px;
