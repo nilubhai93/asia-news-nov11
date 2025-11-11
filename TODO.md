@@ -1,9 +1,6 @@
-# TODO: Add Timestamp to Each News Item in Sidebar
+# TODO List for Replacing All Colors to Black
 
-- [x] Modify loadRecentHeadlines() in main.js to include the publication date below each headline in the sidebar.
-
-# TODO: Implement Search Functionality for News Articles
-
-- [x] Add searchNews() function to filter newsData by title and summary
-- [x] Modify loadNews() and loadRecentHeadlines() to use filtered data
-- [x] Add event listener on search bar to trigger filtering and reload news
+- [x] Edit assets/css/base.css: Change all color properties to black theme (backgrounds to #000, text to #fff, accents to #000).
+- [x] Edit assets/css/layout.css: Change all color properties to black theme.
+- [x] Edit assets/css/components.css: Change all color properties to black theme.
+- [x] Test the layout by opening index.html in a browser to verify the black color scheme.

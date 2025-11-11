@@ -1,5 +1,5 @@
 // assets/js/main.js
-console.log("✅ E-News Frontend loaded successfully");
+console.log("✅ Asia-News Frontend loaded successfully");
 
 // Fixed sub-nav on scroll
 window.addEventListener('scroll', function() {
@@ -132,7 +132,7 @@ function loadArticle() {
 
   articleSection.innerHTML = `
     <h2>${news.title}</h2>
-    <p class="meta">By <strong>E-News Staff</strong> | ${news.date}</p>
+    <p class="meta">By <strong>Asia-News Staff</strong> | ${news.date}</p>
     <img src="${news.image}" alt="Article Image" class="article-image">
     <div class="article-body">
       ${news.content.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('')}

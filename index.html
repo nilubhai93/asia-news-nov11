@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-News | Latest Headlines</title>
+  <title>Asia-News | Latest Headlines</title>
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -13,17 +13,18 @@
   <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container header-content">
+      <input type="text" class="search-bar" placeholder="Search news...">
       <h1 class="logo"><a href="index.html"><img src="assets/images/Asia-logo.png" width="50px"></a></h1>
-      <div class="header-right">
-        <input type="text" class="search-bar" placeholder="Search news...">
-        <a href="#" class="profile-icon" title="Login">👤</a>
-      </div>
+      <a href="#" class="profile-icon" title="Login">👤</a>
     </div>
     
     <hr>
     
-    <div class="container">
+    <div class="sub-container">
       <nav class="sub-nav">
+        <div class="sub-nav-logo">
+          <a href="index.html"><img src="assets/images/Asia-logo.png"  alt="Asia-News Logo"></a>
+        </div>
         <ul>
           <li><a href="#">Art Cinema</a></li>
           <li><a href="#">Business</a></li>
@@ -54,24 +55,70 @@
   <section class="news-section container">
     <h2 class="section-title">Latest News</h2>
     <div class="news-layout">
+      
+      <div class="news-main">
+        <div class="news-grid" id="news-grid">
+          <!-- News cards will be dynamically loaded here -->
+        </div>
+      </div>
+
+
       <aside class="news-sidebar">
         <h3>Recent Headlines</h3>
         <ul class="recent-headlines">
           <!-- Recent headlines will be dynamically loaded here -->
         </ul>
       </aside>
-      <div class="news-main">
-        <div class="news-grid" id="news-grid">
-          <!-- News cards will be dynamically loaded here -->
-        </div>
-      </div>
+
+
+
     </div>
   </section>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container">
-      <p>© 2025 E-News | All rights reserved.</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About Asia-News</h4>
+          <p>Your trusted source for the latest news and updates from around the world. Stay informed with breaking stories and in-depth analysis.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/facebook.svg" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/twitter.svg" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn"></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p>Email: info@asia-news.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+          <p>Address: 123 News St, City, Country</p>
+        </div>
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get the latest news delivered to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Asia-News | All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
