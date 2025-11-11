@@ -1,6 +1,11 @@
-# TODO List for Replacing All Colors to Black
+# TODO List for News Website Restructuring
 
-- [x] Edit assets/css/base.css: Change all color properties to black theme (backgrounds to #000, text to #fff, accents to #000).
-- [x] Edit assets/css/layout.css: Change all color properties to black theme.
-- [x] Edit assets/css/components.css: Change all color properties to black theme.
-- [x] Test the layout by opening index.html in a browser to verify the black color scheme.
+## Completed Tasks
+- [x] Analyze current structure and data
+- [x] Modify Latest News to show only 8 items
+- [x] Add Trending News section
+- [x] Add Lifestyle section
+- [x] Update data.js with trending and lifestyle data
+- [x] Update main.js with new load functions
+- [x] Update index.html with new sections
+- [x] Test the layout

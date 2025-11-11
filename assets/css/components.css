@@ -84,6 +84,10 @@
   gap: 20px;
 }
 
+.three-column-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* Responsive design for Latest News section */
 @media (max-width: 768px) {
   .news-layout {
@@ -103,6 +107,10 @@
   .news-grid {
     grid-template-columns: 1fr; /* Single column on mobile */
     gap: 15px;
+  }
+
+  .three-column-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for three-column grids on mobile */
   }
 
   .recent-headlines li {
@@ -128,7 +136,7 @@
 
 .news-card img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
 

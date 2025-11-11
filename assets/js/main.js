@@ -14,8 +14,8 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Load news data and display on index.html
-function loadNews(filteredData = newsData) {
+// Load news data and display on index.html (limited to 8 items)
+function loadNews(filteredData = newsData.slice(0, 8)) {
   const newsGrid = document.getElementById('news-grid');
   if (!newsGrid) return; // Only run on index.html
 
@@ -37,6 +37,50 @@ function loadNews(filteredData = newsData) {
 
   // Load recent headlines in sidebar
   loadRecentHeadlines(filteredData);
+}
+
+// Load trending news
+function loadTrending(filteredData = trendingData) {
+  const trendingGrid = document.getElementById('trending-grid');
+  if (!trendingGrid) return;
+
+  trendingGrid.innerHTML = '';
+
+  filteredData.forEach(news => {
+    const newsCard = document.createElement('div');
+    newsCard.className = 'news-card';
+    newsCard.innerHTML = `
+      <img src="${news.image}" alt="News Image">
+      <div class="news-content">
+        <h3><a href="article.html?id=${news.id}">${news.title}</a></h3>
+        <p>${news.summary}</p>
+        <small>${news.category} • ${news.date}</small>
+      </div>
+    `;
+    trendingGrid.appendChild(newsCard);
+  });
+}
+
+// Load lifestyle news
+function loadLifestyle(filteredData = lifestyleData) {
+  const lifestyleGrid = document.getElementById('lifestyle-grid');
+  if (!lifestyleGrid) return;
+
+  lifestyleGrid.innerHTML = '';
+
+  filteredData.forEach(news => {
+    const newsCard = document.createElement('div');
+    newsCard.className = 'news-card';
+    newsCard.innerHTML = `
+      <img src="${news.image}" alt="News Image">
+      <div class="news-content">
+        <h3><a href="article.html?id=${news.id}">${news.title}</a></h3>
+        <p>${news.summary}</p>
+        <small>${news.category} • ${news.date}</small>
+      </div>
+    `;
+    lifestyleGrid.appendChild(newsCard);
+  });
 }
 
 // Load recent headlines in sidebar
@@ -79,8 +123,11 @@ function searchNews(query) {
 // Load news on page load
 document.addEventListener('DOMContentLoaded', function() {
   loadNews();
+  loadTrending();
+  loadLifestyle();
   loadArticle();
   initFooterScroll();
+  loadShorts();
 
   // Add search functionality
   const searchBar = document.querySelector('.search-bar');
@@ -138,4 +185,39 @@ function loadArticle() {
       ${news.content.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('')}
     </div>
   `;
+}
+
+
+
+
+// Load shorts videos
+function loadShorts() {
+  const shortsContainer = document.getElementById("shortsContainer");
+  if (!shortsContainer) return; // Only run on pages with shorts section
+
+  shortsContainer.innerHTML = ''; // Clear existing content
+
+  shortsData.forEach(short => {
+    const card = document.createElement("div");
+    card.classList.add("short-card");
+
+    let mediaElement = '';
+    if (short.video.includes('youtube.com/shorts')) {
+      // Extract YouTube video ID from shorts URL
+      const videoId = short.video.split('/shorts/')[1].split('?')[0];
+      mediaElement = `<iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    } else {
+      mediaElement = `<video src="${short.video}" controls muted poster="https://picsum.photos/250/420?random=${Math.floor(Math.random() * 1000)}">Your browser does not support the video tag.</video>`;
+    }
+
+    card.innerHTML = `
+      ${mediaElement}
+      <div class="short-info">
+        <p class="short-title">${short.title}</p>
+        <span class="short-duration">▶ ${short.duration}</span>
+      </div>
+    `;
+
+    shortsContainer.appendChild(card);
+  });
 }

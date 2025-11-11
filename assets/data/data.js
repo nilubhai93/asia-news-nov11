@@ -90,3 +90,82 @@ const newsData = [
     category: "Travel"
   }
 ];
+
+
+const trendingData = newsData.slice(0, 5); // First 5 news items as trending
+
+const lifestyleData = [
+  {
+    id: 11,
+    title: "Healthy Eating Habits for Busy Professionals",
+    summary: "Discover simple ways to maintain a balanced diet amidst a hectic schedule...",
+    content: "Maintaining a healthy diet can be challenging for busy professionals, but with some planning and smart choices, it's entirely possible. Start your day with a nutritious breakfast, pack healthy snacks, and opt for quick, wholesome meals. Incorporating more fruits, vegetables, and whole grains into your diet can boost energy levels and improve overall well-being.",
+    image: "https://picsum.photos/id/11/400/250",
+    date: "Nov 11, 2025",
+    category: "Lifestyle"
+  },
+  {
+    id: 12,
+    title: "Mindfulness Meditation: A Guide for Beginners",
+    summary: "Learn the basics of mindfulness meditation and its benefits for mental health...",
+    content: "Mindfulness meditation involves focusing on the present moment without judgment. It can reduce stress, improve concentration, and enhance emotional regulation. Beginners should start with short sessions, using guided apps or videos. Consistent practice can lead to significant improvements in mental clarity and overall life satisfaction.",
+    image: "https://picsum.photos/id/12/400/250",
+    date: "Nov 10, 2025",
+    category: "Lifestyle"
+  },
+  {
+    id: 13,
+    title: "Sustainable Fashion: Making Eco-Friendly Choices",
+    summary: "Explore how to build a wardrobe that's kind to the planet and your wallet...",
+    content: "Sustainable fashion focuses on reducing environmental impact through ethical production and consumption. Choose quality over quantity, opt for natural fibers, and support brands with transparent supply chains. Thrift shopping, upcycling, and capsule wardrobes are great ways to embrace sustainable fashion while expressing personal style.",
+    image: "https://picsum.photos/id/13/400/250",
+    date: "Nov 9, 2025",
+    category: "Lifestyle"
+  },
+  {
+    id: 14,
+    title: "Home Workouts: Staying Fit Without a Gym",
+    summary: "Effective exercises you can do at home with minimal equipment...",
+    content: "Home workouts offer convenience and flexibility for maintaining fitness. Bodyweight exercises like push-ups, squats, and planks can build strength and endurance. Incorporate cardio activities such as jumping jacks or high knees for heart health. Consistency and proper form are key to achieving results and preventing injury.",
+    image: "https://picsum.photos/id/14/400/250",
+    date: "Nov 8, 2025",
+    category: "Lifestyle"
+  },
+  {
+    id: 15,
+    title: "Digital Detox: Reconnecting with the Real World",
+    summary: "Strategies to reduce screen time and improve work-life balance...",
+    content: "In our digital age, taking breaks from screens is crucial for mental health. Set boundaries for device use, create phone-free zones, and engage in offline activities. Digital detoxes can improve sleep quality, reduce anxiety, and strengthen real-world relationships. Start small with short breaks and gradually build healthier habits.",
+    image: "https://picsum.photos/id/15/400/250",
+    date: "Nov 7, 2025",
+    category: "Lifestyle"
+  }
+];
+
+const shortsData = [
+  {
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
+    title: "Back on board: Singapore's cable wakeboarders gear up for SEA Games return",
+    duration: "48s"
+  },
+  {
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
+    title: "A look at Singapore Police Force’s K-9 Unit",
+    duration: "1m 37s"
+  },
+  {
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4",
+    title: "How does the Singapore army conduct humanitarian airdrop missions?",
+    duration: "1m 17s"
+  },
+  {
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_10mb.mp4",
+    title: "Former bullies on what drove them to hurt others - and why it’s no excuse...",
+    duration: "1m 29s"
+  },
+  {
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_20mb.mp4",
+    title: "Wicked: For Good takes over Sentosa in Singapore",
+    duration: "55s"
+  }
+];
